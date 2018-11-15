@@ -1,0 +1,1373 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Spycv.org/resume</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+<style>
+/*
+    Theme Name: MyResume
+    Theme URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+*/
+/* --- General --- */
+body {
+	font-family:'Montserrat',sans-serif;
+	font-size:16px;
+	line-height:1.7;
+	color:#777;
+	font-weight:400;
+	overflow-x:hidden;
+}
+.playball {
+	font-family:'Playball',cursive;
+}
+h1,h2,h3,h4,h5,h6 {
+	color:#333;
+	line-height:1.4;
+	font-weight:600;
+}
+
+a,a:hover {
+	color:#92DD03 ;
+	text-decoration: none;
+}
+img {max-width: 100%;}
+/* --- Menu --- */
+.isFixed {
+	left:0px;
+	width:100%;
+}
+.menu {
+	margin-top:0px;
+	position:absolute;
+	z-index:999;
+	left:0px;
+	right:0px;
+	bottom:0;
+}
+
+.navArea {
+	/*float:right;*/
+}
+.navwrapper .container {
+	padding:0;
+	width:auto;
+}
+.navbar-header {
+	display:none;
+}
+.nav>li>a {
+	display:inline-block;
+}
+.navbar-nav>li {
+	float:none;
+	display:inline-block;
+}
+.navbar-nav {
+	margin:0 auto;
+	text-align:center;
+	float:none;
+}
+.navbar-toggle {
+	margin-top: 14px;
+}
+/* Special class on .container surrounding .navbar,used for positioning it into place. */
+.navbar-wrapper {
+	margin-top:0px;
+	height:80px;
+	position:relative;
+	z-index:15;
+	margin-right:-15px;
+}
+.navbar-wrapper .container {
+	padding:0px;
+}
+.navbar-collapse {
+	padding:0;
+}
+.navbar-collapse.in {
+	max-height:100%;
+}
+.navbar.navbar-inverse.navbar-static-top {
+	margin:0px auto;
+	background:none;
+	color:#92DD03;
+	border:none;
+	font-family:'Open Sans',sans-serif;
+	font-size:14px;
+	font-weight:600;
+	text-transform:uppercase;
+}
+.navbar.navbar-inverse.navbar-static-top a {
+	color:#fff;
+	padding:31px 16px;
+	line-height:18px;
+	text-align:center;
+}
+.navbar.navbar-inverse.navbar-static-top a:hover {
+	background:none;
+	color:#fff;
+}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus {
+	background:none;
+	color:#fff !important;
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+	color:#fff;
+}
+.hideClass {
+	display:none;
+}
+.isFixed .navbar-inverse .navbar-nav>.active>a,.isFixed .navbar-inverse .navbar-nav>.active>a:focus {
+	background:#92DD03 ;
+	color:#fff;
+}
+.isFixed .navbar.navbar-inverse.navbar-static-top a:hover {
+	background:#92DD03 ;
+	color:#fff;
+}
+.isFixed .navbar.navbar-inverse.navbar-static-top a {
+	color:#fff;
+}
+.stuckMenu {
+	-o-transition:all .5s;
+	-ms-transition:all .5s;
+	-moz-transition:all .5s;
+	-webkit-transition:all .5s;
+	transition:all .5s;
+		background:#111;
+}
+.isFixed {
+	background:#333;
+		-o-transition:all .5s;
+	-ms-transition:all .5s;
+	-moz-transition:all .5s;
+	-webkit-transition:all .5s;
+	transition: all .5s;
+}
+.collapse {
+	display: block !important;
+}
+@media (max-width: 655px) {
+	.collapse {background: #333;}
+	.navbar.navbar-inverse.navbar-static-top a {padding: 15px 16px;line-height: 15px;font-size: 13px;}
+}
+/* --- Intro --- */
+header {
+	padding-bottom:50px;
+}
+.intro {
+	font-family:'Courier',bold;
+	font-size:60px;
+	line-height:1.0;
+	font-weight: 900;
+}
+
+.intro a {
+	color:light-geetha;
+}
+.tag
+{
+	font-family:harington;
+    font-color:black;
+font-size:25px;
+font-style:bold;	
+
+
+}
+.tag a 
+{
+  color:white;
+  
+}
+
+
+/* --- Parallax --- */
+.parallax {
+	text-align:center;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed !important;
+	overflow:hidden;
+}
+.parallax-pattern-overlay {
+	background-image:url(../img/pattern.png);
+	background-repeat: repeat;
+}
+/* --- Heading --- */
+.heading {
+	padding-bottom:15px;
+	text-align:center;
+	max-width:960px;
+	margin:0px auto;
+	padding-top:80px;
+}
+.heading h2 {
+	font-weight:700;
+	font-family:'Playball',cursive;
+	font-size:35px;
+	color:#333;
+	margin:0;
+	padding:5px;
+}
+.heading h2::first-letter {
+	color:#92DD03 ;
+}
+.heading h3 {
+	font-size:16px;
+	line-height:1.7;
+}
+img#site-title {
+	max-width: 150px;
+}
+
+.papers,.papers:before,.papers:after {
+	background-color:#fff;
+	border:1px solid #ccc;
+	box-shadow:inset 0 0 30px rgba(0,0,0,0.1),1px 1px 3px rgba(0,0,0,0.2);
+}
+.papers {
+	position:relative;
+	width:90%;
+	padding:2em;
+	margin:0px auto;
+	margin-top:40px;
+	font-size:12px;
+}
+.papers:before,.papers:after {
+	content:"";
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	-webkit-transform:rotateZ(2.5deg);
+	-o-transform:rotate(2.5deg);
+	transform:rotateZ(2.5deg);
+	z-index:-1;
+}
+.papers:after {
+	-webkit-transform:rotateZ(-2.5deg);
+	-o-transform:rotate(-2.5deg);
+	transform:rotateZ(-2.5deg);
+}
+.papers h1 {
+	font-size:1.8em;
+	font-weight:normal;
+	text-align:center;
+	padding:0.2em 0;
+	margin:0;
+	border-top:1px solid #ddd;
+	border-bottom:2px solid #ddd;
+}
+.papers p {
+	text-align:left;
+	margin:1.5em 0;
+}
+.papers img {
+	max-width:100%;
+	margin-bottom: 5px;
+}
+/* --- Skills --- */
+
+.progress-wrap{
+  position: relative;
+}
+
+.progress .color1,
+.progress .color1 .bar-width{
+  background: #2d7da4;
+}
+
+.progress .color2,
+.progress .color2 .bar-width{
+  background: #6aa42f;
+}
+
+.progress .color3,
+.progress .color3 .bar-width{
+  background: #ffcc33;
+}
+
+.progress .color4,
+.progress .color4 .bar-width{
+  background: #db3615;
+}
+
+.progress, 
+.progress-bar {
+  height: 15px;
+  line-height: 15px;
+  background: #e6e6e6;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
+  text-align: right;
+}
+
+.progress{
+  position: relative;
+}
+
+.progress .bar-width{
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  top: -30px;
+  border-radius: 2px;
+  margin-left: -30px;
+}
+
+.progress span{
+  position: relative;
+}
+
+.progress span:before{
+  content: " ";
+  position: absolute;
+  width: auto;
+  height: auto;
+  border-width: 8px 5px;
+  border-style: solid;
+  bottom: -15px;
+  right: 8px;
+}
+
+.progress .color1 span:before{
+  border-color: #2d7da4 transparent transparent transparent;
+}
+
+.progress .color2 span:before{
+  border-color: #6aa42f transparent transparent transparent;
+}
+
+.progress .color3 span:before{
+  border-color: #ffcc33 transparent transparent transparent;
+}
+
+.progress .color4 span:before{
+  border-color: #db3615 transparent transparent transparent;
+}
+.specialties img {
+	margin-top:30px;
+	margin-bottom:50px;
+}
+
+.skills {
+	box-shadow:inset 0 0 0 16px #fff,inset 0 0 0 17px #eee,inset 0 0 0 18px #fff,inset 0 0 0 19px #eee,inset 0 0 0 20px #fff,inset 0 0 0 21px #eee,0 4px 20px rgba(0,0,0,0.1);
+	-webkit-transform:translateZ(0px);
+	transform:translateZ(0px);
+	opacity:1;
+	pointer-events:auto;
+}
+.skills h5 {
+	margin:0;
+	font-size:14px;
+}
+.skills .rm-thumb {
+	width:100px;
+	height:100px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	float:left;
+	margin:0 20px 0 0;
+	box-shadow:inset 1px 1px 3px rgba(0,0,0,0.2),1px 1px 1px rgba(255,255,255,0.1);
+	border-radius:50%;
+}
+.skills {
+	font-size:12px;
+	padding:40px 40px 20px 40px;
+}
+.restitem {
+	margin-bottom:40px;
+}
+.restitem p {
+	margin-bottom:0px;
+}
+.skills h3.main {
+	margin:0 0 20px 0;
+	font-size:19px;
+	padding-bottom:10px;
+	color:#92DD03 ;
+	border-bottom: 4px double #eee;
+}
+.jumbotron hi-icon-wrap hi-icon-effect {
+    padding: 0.5em 0.6em;
+    float:center-left;
+    }
+.jumbotron text-center
+{
+position:absolut;
+top:0;
+left:50%;	
+}
+/* General style */
+.grid-gallery ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.grid-gallery figure {
+	margin:0;
+}
+.grid-gallery figure img {
+	display:block;
+	width:100%;
+}
+.grid-gallery figcaption h3 {
+	margin:0;
+	padding:0 0px 0;
+	color:#fff;
+	font-size:17px;
+	font-weight:300;
+}
+.grid-gallery figcaption p {
+	margin:0;
+	font-size: 12px;
+}
+/* Grid style */
+.grid-wrap {
+		margin:0 auto;
+}
+.grid {
+	margin:0 auto;
+}
+.grid li {
+	width:25%;
+	float:left;
+	cursor:pointer;
+}
+.grid figure {
+	padding:15px;
+	-webkit-transition:opacity 0.2s;
+	transition:opacity 0.2s;
+}
+.grid li:hover figure {
+	opacity:0.7;
+}
+.grid figcaption {
+	background:#333;
+	padding: 25px;
+}
+/* Slideshow style */
+.slideshow {
+	position:fixed;
+	background:rgba(0,0,0,0.6);
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:500;
+	opacity:0;
+	visibility:hidden;
+	overflow:hidden;
+	-webkit-perspective:1000px;
+	perspective:1000px;
+	-webkit-transition:opacity 0.5s,visibility 0s 0.5s;
+	transition:opacity 0.5s,visibility 0s 0.5s;
+}
+.slideshow-open .slideshow {
+	opacity:1;
+	visibility:visible;
+	-webkit-transition:opacity 0.5s;
+	transition:opacity 0.5s;
+}
+.slideshow ul {
+	width:100%;
+	height:100%;
+	-webkit-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	-webkit-transform:translate3d(0,0,150px);
+	transform:translate3d(0,0,150px);
+	-webkit-transition:-webkit-transform 0.5s;
+	transition:transform 0.5s;
+}
+.slideshow ul.animatable li {
+	-webkit-transition:-webkit-transform 0.5s;
+	transition:transform 0.5s;
+}
+.slideshow-open .slideshow ul {
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+}
+.slideshow li {
+	width:660px;
+	height:560px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-280px 0 0 -330px;
+	visibility:hidden;
+}
+.slideshow li.show {
+	visibility:visible;
+}
+.slideshow li:after {
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:rgba(255,255,255,0.8);
+	-webkit-transition:opacity 0.3s;
+	transition:opacity 0.3s;
+}
+.slideshow li.current:after {
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition:opacity 0.3s,visibility 0s 0.3s;
+	transition:opacity 0.3s,visibility 0s 0.3s;
+}
+.slideshow figure {
+	width:100%;
+	height:100%;
+	background:#fff;
+	border:50px solid #fff;
+	overflow:hidden;
+}
+
+/* Navigation */
+.slideshow nav span {
+	position:fixed;
+	z-index:1000;
+	color:#fff;
+	text-align:center;
+	padding:2%;
+	cursor:pointer;
+	font-size:2.2em;
+	background:rgba(0,0,0,0.1);
+}
+.slideshow nav span.nav-prev,.slideshow nav span.nav-next {
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.slideshow nav span.nav-next {
+	right:0;
+}
+.slideshow nav span.nav-close {
+	top:75px;
+	right:0px;
+	padding:10px 25px;
+	color:#999;
+}
+.icon:before,.icon:after {
+	font-family:'fontawesome';
+	speak:none;
+	font-style:normal;
+	font-weight:normal;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+span.nav-prev:before {
+	content:"\f104";
+}
+span.nav-next:before {
+	content:"\f105";
+}
+span.nav-close:before {
+	content: "\f00d";
+}
+/* Info on arrow key navigation */
+.info-keys {
+	position:fixed;
+	top:10px;
+	left:10px;
+	width:60px;
+	font-size:8px;
+	padding-top:20px;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:1px;
+	text-align:center;
+}
+.info-keys:before,.info-keys:after {
+	position:absolute;
+	top:0;
+	width:16px;
+	height:16px;
+	border:1px solid #fff;
+	text-align:center;
+	line-height:14px;
+	font-size:12px;
+}
+.info-keys:before {
+	left:10px;
+	content:"\e603";
+}
+.info-keys:after {
+	right:10px;
+	content: "\e604";
+}
+/* Example media queries (reduce number of columns and change slideshow layout) */
+@media screen and (max-width:60em) {
+	/* responsive columns;see "Element sizing" on http://masonry.desandro.com/options.html */
+	.grid li {
+			width:33.3%;
+	}
+	.slideshow li {
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+			margin:0;
+	}
+	.slideshow li figure img {
+			width:auto;
+			margin:0 auto;
+			max-width:100%;
+	}
+	.slideshow nav span,.slideshow nav span.nav-close {
+			font-size:1.8em;
+			padding:0.3em;
+	}
+	.info-keys {
+			display:none;
+	}
+}
+@media screen and (max-width:35em) {
+	.grid li {
+			width:50%;
+	}
+}
+@media screen and (max-width:24em) {
+	.grid li {
+			width: 100%;
+	}
+}
+/* --- Educations --- */
+.jumbotron
+{
+background-image: color 300ms,background-color 300ms;
+}
+
+.hi-icon-effect {
+	padding-bottom:30px;
+	padding-left:5px; 
+	padding-right:10px;
+	padding:top:10px
+}
+
+.hi-icon-effect:hover {	
+	-webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;
+}
+
+.hi-icon-effect i.fa:hover {
+	background:black;
+	color: #92DD03;
+	-webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;
+}
+
+.hi-icon-effect i {
+	font-size:30px;
+	margin-top:50px;
+	margin-bottom:30px;
+	color:#fff;
+	padding:50px;
+	background:#92DD03;
+	border-radius:50%;
+}
+
+/* --- Contact --- */
+/* --- Map --- */
+.map{
+	position:relative;
+	margin-top:50px;
+	margin-bottom:40px;
+}
+
+/* google map */
+#google-map{
+    position:relative;
+    height: 400px;
+}
+
+.contact-info {
+	margin-top:40px;
+}
+
+.contact-info p {
+	color:#333;
+}
+
+.contact-info ul {
+	color:#333;
+	list-style:none;
+	margin-left:-40px;
+}
+
+.contact-info ul li {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.contact-info i {
+	color:#92DD03;	
+}
+
+
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+#sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+}
+
+input.contact {
+	background:#fff;
+	border:solid 1px #ddd;
+	color:#000;
+	padding:15px 30px;
+	
+	margin-right:3%;
+	margin-bottom:30px;
+	outline:none;
+}
+input.contact.noMarr {
+	margin-right:0px;
+}
+textarea.contact {
+	background:#fff;
+	color:#000;
+	border:solid 1px #ddd;
+	padding:15px 30px;
+	
+	margin-bottom:40px;
+	outline:none;
+	height:150px;
+}
+.contact.submit {
+	background:#333;
+	font-family:'Montserrat',sans-serif;
+	color:#fff;
+	font-size:16px;
+	font-weight:400;
+	text-align:center;
+		margin:0px;
+	border:none !important;
+	border-radius:3px;
+}
+.contact.submit:hover {
+	background:#92DD03 ;
+}
+.done {
+	display:none;
+}
+.error input,input.error,.error textarea,textarea.error {
+	background-color:#ffffff;
+	border:1px solid red !Important;
+	-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;
+	-moz-transition:border linear 0.2s,box-shadow linear 0.2s;
+	-o-transition:border linear 0.2s,box-shadow linear 0.2s;
+	transition:border linear 0.2s,box-shadow linear 0.2s;
+}
+@media screen and (min-width:768px) {
+	input.contact.col-md-6 {
+		width: 48.5%;
+	}
+}
+/* --- Footer --- */
+.footer {
+	background:#92DD03 ;
+	margin-top:120px;
+	position:relative;
+	margin-right:-15px;
+}
+.footer .container {
+	padding:60px 0 20px;
+}
+.footer ul {
+	margin:0 auto;
+	margin-bottom:30px;
+	margin-top:10px;
+	text-align:center;
+	list-style-type:none;
+	padding-left:0;
+}
+.footer ul li {
+	display:inline-block;
+	text-align:center;
+	background:rgba(0,0,0,0.2);
+	color:#ffffff;
+	line-height:45px;
+	margin:0 4px 0px;
+	width:45px !important;
+	height:45px !important;
+		-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.footer ul li:hover {
+	background:#2a2a2a;
+}
+.footer ul li:hover	a {
+	color:#fff;
+}
+.footer ul li a {
+	color:#fff;
+	width:42px !important;
+	height:42px !important;
+}
+.footer ul li a i {
+	line-height:45px;
+	color:#fff;
+}
+.footer p {
+	color:#fff;
+	font-size:13px;
+	line-height:24px;
+	font-weight:300;
+	text-align:center;
+	text-transform:uppercase;
+}
+.gototop {
+	display:inline-block;
+	width:60px;
+	height:60px;
+	background:#fff;
+	position:absolute;
+	margin-left:-30px;
+	top:-35px;
+	border-radius:50%;
+}
+.gototop i {
+	color:#92DD03 ;
+	line-height:70px;
+}
+.footer a,.footer a:hover {
+	color:#fff;
+}
+.credits {
+    text-align: center;
+}
+
+
+
+blockquote {
+	font-style:italic;
+	margin:0 0 0px 0;
+	padding:20px 70px 10px;
+	position:relative;
+	font-size:13px;
+	border:0;
+}
+blockquote:before {
+	display:block;
+	content:"\201C";
+	font-size:120px;
+	position:absolute;
+	left:10px;
+	top:-30px;
+	color:#92DD03 ;
+	font-family:Georgia;
+}
+blockquote cite {
+	color:#92DD03 ;
+	font-size:14px;
+	display:block;
+	margin-top:5px;
+	text-align:right;
+}
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+</style>
+</head>
+
+<body>
+  <div class="wrapper" id="wrapper">
+    <header>
+      <div class="banner row" id="banner">
+        <div class="parallax text-center" style="background-image: url(img/1.jpg);">
+          <div class="parallax-pattern-overlay">
+            <div class="container text-center" style="height:700px;padding-top:150px;">
+              <!--<a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="img/i2.jpg" alt=""/></a>--->
+              <h2 class="intro"><a href="index.html">Geetha</a></h2>
+			  <div class="tag"><a href="index.html">Web Developer</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="navwrapper">
+              <div class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                  <div class="navArea">
+                    <div class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                        <li class="menuItem active"><a href="#wrapper">Home</a></li>
+                        <li class="menuItem"><a href="#aboutus">About Us</a></li>
+                        <li class="menuItem"><a href="#feedback">Education</a></li>
+                        <li class="menuItem"><a href="#specialties">Skills</a></li>
+                        <li class="menuItem"><a href="#gallery">Portfolio</a></li>
+                        <li class="menuItem"><a href="#contact">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--about us-->
+    <section class="aboutus" id="aboutus">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>About Me</h2>
+          <text class="text-primary">Hello! I am <strong>Geetha</strong> Web Developer,Designer<br>I am a dedicated person,fast learner.I Love to learn new things and exploring My skills.Learning strengthen my ability.I attribute my skills to handle many tasks at once where there are different opportunities to grab </text>
+           
+		  </div>   
+        </div>
+      </div>
+    </section>
+
+
+    
+ <!--education-->
+    <section class="feedback" id="feedback">
+      <div class="container">
+	  
+        <div class="heading">
+          <h2>Education</h2>
+          </div>
+        <div class="container">
+		<div class="col-sm-3 wow fadeInLeft" data-wow-offset="1">
+         
+          <div class="jumbotron">		 
+          <div class="text-center">
+		  
+            <div class="hi-icon-wrap hi-icon-effect">
+              <h4>MASTER OF COMPUTER SCIENCE</h4>
+              <h5>OCT 2015 - JULY 2018</h5>
+              <i class="fa fa-laptop"></i>
+			  <div class="text-center">
+              <div class="text-success">Dr.Ambedkar Institute Of Technology<br>76%<br>Visvesvaraya Technological University </div>
+            </div>
+          </div>
+        </div>
+		</div>
+		</div>
+		
+
+        <div class="col-sm-3 wow fadeInLeft" data-wow-offset="2" >
+		<div class="jumbotron">
+          <div class="text-center">
+            <div class="hi-icon-wrap hi-icon-effect">
+              <h4>BACHELOR OF COMPUTER SCIENCE</h4>
+              <h5>FEB 2012 - MAY 2015</h5>
+              <i class="fa fa-book"></i>
+               <div class="text-success">Shree Jagadguru Renukacharya College For Women<br> 75%<br>Bangalore University</div>
+            </div>
+          </div>
+        </div>
+		</div>
+
+        <div class="col-sm-3 wow fadeInLeft" data-wow-offset="3">
+		<div class="jumbotron">
+          <div class="text-center">
+            <div class="hi-icon-wrap hi-icon-effect">
+              <h4>Pre University Course</h4>
+              <h5>March 2010 - May 2012</h5>
+              <br><i class="fa fa-gear"></i>
+             <p class="lead"> 
+<div class="text-success">Sheshadripuram Independent Pre-University<br>77%<br>Pre-University</div>
+            </div>
+          </div>
+        </div>
+		</div>
+		
+		<div class="col-sm-3 wow fadeInLeft" data-wow-offset="6">
+		<div class="jumbotron">
+          <div class="text-center">
+            <br><div class="hi-icon-wrap hi-icon-effect">
+              <h4>Karnataka Secondary Education</h4>
+              <h5>March 2009 - Feb 2010</h5>
+              <i class="fa fa-adn"></i>
+              <div class="text-success"><br>Bharathiya Samskruthi Vidya Pith<br>67%<br>Karnataka Secondary Board</div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  </div>
+	  </div>
+   </section>
+
+    <!--education-->
+    
+<!--skills-->
+    <section class="specialties" id="specialties">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>Professional Skills</h2>
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s" ">
+					<div class="skill ">
+						<div class="progress-wrap ">
+							<h3>HTML</h3>
+							<div class="progress ">
+							  <div class="progress-bar color1 " role="progressbar " aria-valuenow="40 " aria-valuemin="0 " aria-valuemax="100 " style="width: 85% ">
+								<span class="bar-width">85%</span>
+							  </div>
+
+							</div>
+						</div>
+
+						<div class="progress-wrap ">
+							<h3>CSS</h3>
+							<div class="progress ">
+							  <div class="progress-bar color2 " role="progressbar" aria-valuenow="20 " aria-valuemin="0 " aria-valuemax="100 " style="width: 95% ">
+							   <span class="bar-width">80%</span>
+							  </div>
+							</div>
+						</div>
+
+						<div class="progress-wrap ">
+							<h3>JAVA</h3>
+							<div class="progress ">
+							  <div class="progress-bar color3 " role="progressbar " aria-valuenow="60 " aria-valuemin="0 " aria-valuemax="100 " style="width: 80% ">
+								<span class="bar-width">80%</span>
+							  </div>
+							</div>
+						</div>
+
+						<div class="progress-wrap ">
+							<h3>DESIGINING</h3>
+							<div class="progress ">
+							  <div class="progress-bar color1" role="progressbar" aria-valuenow="80 " aria-valuemin="0 " aria-valuemax="100 " style="width: 90% ">
+								<span class="bar-width ">70%</span>
+							  </div>
+							</div>
+						</div>
+						<div class="progress-wrap ">
+							<h3>C/C++</h3>
+							<div class="progress ">
+							  <div class="progress-bar color2" role="progressbar" aria-valuenow="80 " aria-valuemin="0 " aria-valuemax="100 " style="width: 90% ">
+								<span class="bar-width">70%</span>
+							  </div>
+							</div>
+						</div>
+						<div class="progress-wrap ">
+							<h3>JAVASCRIPT</h3>
+							<div class="progress ">
+							  <div class="progress-bar color4" role="progressbar" aria-valuenow="80 " aria-valuemin="0 " aria-valuemax="100 " style="width: 90% ">
+								<span class="bar-width">60%</span>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.10s">
+            <img src="img/team/3.jpg" class="img-responsive">
+          </div>
+        </div>
+      </div>
+
+    
+    <!--portfolio-->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>Portfolio</h2>
+          </div>
+
+        <div id="grid-gallery" class="grid-gallery">
+          <section class="grid-wrap">
+            <ul class="grid">
+              <li class="grid-sizer"></li>
+              <!-- for Masonry column width -->
+              <li>
+                <figure>
+				<div class="col-mid-3">
+                  <img src="img/work/th.jpg" alt="" />
+                  <figcaption>
+                    <h3>Krishi Exhibition</h3>
+                    <p>its a automated project instead of manual which to Agriculture Technology as well as farmer in reducing the person time,man efforts.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+				<div class="col-mid-3">
+                  <img src="img/work/images2.jpg" alt="" />
+                  <figcaption>
+                    <h3>"ONLINE PORTAL FOR IT INSTITUTION"</h3>
+                    <p>Its a web based information system for<strong>"Shiksha Institute"</strong></p><p>that facilitates easy access of information for the user’s and helps them to seek expert guidance from the faculties through Internet.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+				<div class="col-mid-3">
+                  <img src="img/work/7.jpg" alt="" />
+                  <figcaption>
+                    <h3>MOBILE NUMBER PORTABILITY</h3>
+                    <p>It is a process of switching the existing number from donor mobile network to recipient network without change in the existing number.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+				<div class="col-mid-3">
+                  <img src="img/work/8.jpg" alt="" />
+                  <figcaption>
+                    <h3>METRO TRAIN SMARTCARD</h3>
+                    <p>Metro Train Smartcard<Strong> which is an complete online solution for buying and recharging smartcards online.</p><p> User can recharge their smartcards online and also view metro time table.</p></p>
+                  </figcaption>
+                </figure>
+              </li>
+               </ul>
+          </section>
+          <!-- // end small images -->
+
+         <section class="slideshow">
+            <ul>
+              <li>
+                <figure>
+                  <img src="img/work/th.jpg" alt="" />
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/work/images2.jpg" alt="" />
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/work/2.jpg" alt="" />
+                </figure>
+              </li>
+			   <li>
+                <figure>
+                  <img src="img/work/capture1.jpg" alt="" />
+                </figure>
+              </li>
+              
+            </ul>
+            <nav>
+              <span class="icon nav-prev"></span>
+              <span class="icon nav-next"></span>
+              <span class="icon nav-close"></span>
+            </nav>
+            <div class="info-keys icon">Navigate with arrow keys</div>
+          </section>
+          <!-- // end slideshow -->
+        </div>
+        <!-- // grid-gallery -->
+      </div>
+    </section>
+
+   <section class="contact" id="contact">
+      <div class="container">
+        <div class="heading">
+          <h2>Contact</h2>
+          <p><Strong>&nbsp&nbspKeep In Touch&nbsp&nbsp</Strong></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="map">
+              <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="col-md-6">
+              <h4>My Contact Info</h4>
+              <ul>
+              </li>
+                <li><i class="fa fa-envelope fa-2x"></i>www.spycv.org</li>
+                <li><i class="fa fa-envelope fa-2x"></i> geethabasavraju18@gmail.com</li>
+                <li><i class="fa fa-download fa-2x"></i> Download My Resume</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="contactform/mail.php" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="text-center"><button type="submit" class="contact submit" value="SUBMIT">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer" id="footer">
+      <p class="text-center">
+        <a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+      </p>
+      <div class="container">
+        <ul>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+        </ul>
+        <p>&copy; CVSPYS. All Rights Reserved.</p>
+        <div class="credits">
+          
+         <a href="#">Click to Move TOP</a> 
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/modernizr.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/menustick.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/easing.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/masonry.js"></script>
+  <script src="js/imgloaded.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/colorfinder.js"></script>
+  <script src="js/gridscroll.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/common.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBBsyUOvXOzraQR1QBwwqwnv9YlOsMRaE"
+  type="text/javascript"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+  <script type="text/javascript">
+    jQuery(function($) {
+      $(document).ready(function() {
+        //enabling stickUp on the '.navbar-wrapper' class
+        $('.navbar-wrapper').stickUp({
+          parts: {
+            0: 'banner',
+            1: 'aboutus',
+            2: 'specialties',
+            3: 'gallery',
+            4: 'feedback',
+            5: 'contact'
+          },
+          itemClass: 'menuItem',
+          itemHover: 'active',
+          topMargin: 'auto'
+        });
+      });
+
+      //Google Map
+      var get_latitude = $('#google-map').data('latitude');
+      var get_longitude = $('#google-map').data('longitude');
+
+      function initialize_google_map() {
+        var myLatlng = new google.maps.LatLng(12.972442, 77.580643);
+        var mapOptions = {
+          zoom:14,
+          scrollwheel: false,
+          center: myLatlng
+        };
+        var map = new google.maps.Map(document.getElementById('google-map'),mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map
+        });
+      }
+      google.maps.event.addDomListener(window,'load',initialize_google_map);
+    });
+  </script>
+  <script src="contactform/contactform.js"></script>
+
+
+</body>
+
+</html>
